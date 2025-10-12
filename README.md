@@ -45,7 +45,7 @@ export EVRBLK_API_SECRET_KEY=<KEY_SECRET>
 ## Working with API keys
 
 * `evrblk authn generate-alfa-key` generates Alfa key. Store the private PEM along with your application and pass to
-  Everblack SDK. Take public PEM into the cloud or into your own installation (save as a file named with prefix 
+  Everblack SDK. Take the public PEM into the cloud or into your own installation (save as a file named with prefix 
   `key_alfa_`).
 * `evrblk authn generate-bravo-key` generates Bravo key. Store the secret along with your application and pass to
   Everblack SDK. Take the same secret into your own installation (save as a file named with prefix `key_bravo_`).
