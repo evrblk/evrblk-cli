@@ -25,13 +25,13 @@ var generateAlfaKeyCmd = &cobra.Command{
 			log.Fatal(err)
 		}
 
-		fmt.Println("Public Key:\n")
-		fmt.Println(publicPem)
+		fmt.Printf("Public Key:\n\n")
+		fmt.Printf("%s\n", publicPem)
 
-		fmt.Println("Private Key:\n")
-		fmt.Println(privatePem)
+		fmt.Printf("Private Key:\n\n")
+		fmt.Printf("%s\n", privatePem)
 
-		fmt.Println("Example Key ID (not for cloud use):\n")
+		fmt.Printf("Example Key ID (not for cloud use):\n\n")
 		fmt.Printf("key_alfa_%x\n", rand.Uint64())
 	},
 }
@@ -42,11 +42,10 @@ var generateBravoKeyCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		secret := authn.GenerateBravoSecret()
 
-		fmt.Println("Bravo secret:\n")
-		fmt.Println(secret)
-		fmt.Println()
+		fmt.Printf("Bravo secret:\n\n")
+		fmt.Printf("%s\n\n", secret)
 
-		fmt.Println("Example Key ID (not for cloud use):\n")
+		fmt.Printf("Example Key ID (not for cloud use):\n\n")
 		fmt.Printf("key_bravo_%x\n", rand.Uint64())
 	},
 }
