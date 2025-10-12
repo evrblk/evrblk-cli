@@ -6,13 +6,33 @@ import (
 
 	grackle_preview "github.com/evrblk/evrblk-go/grackle/preview"
 	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
+
+var gracklePreviewCmdCfg struct {
+	apiKeyId     string
+	apiSecretKey string
+	endpoint     string
+}
 
 // gracklePreviewCmd represents the base command for calling Grackle Preview APIs
 var gracklePreviewCmd = &cobra.Command{
 	Use:   "grackle-preview",
 	Short: "Call Grackle Preview API methods",
 	Long:  "",
+	PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
+		viper.SetEnvPrefix("EVRBLK")
+		viper.AutomaticEnv()
+
+		if viper.IsSet("api_key_id") {
+			gracklePreviewCmdCfg.apiKeyId = viper.GetString("api_key_id")
+		}
+		if viper.IsSet("api_secret_key") {
+			gracklePreviewCmdCfg.apiSecretKey = viper.GetString("api_secret_key")
+		}
+
+		return nil
+	},
 }
 
 var createNamespacePreviewCmd = &cobra.Command{
@@ -455,8 +475,17 @@ func init() {
 	gracklePreviewCmd.AddCommand(getLockPreviewCmd)
 	gracklePreviewCmd.AddCommand(deleteLockPreviewCmd)
 	gracklePreviewCmd.AddCommand(listLocksPreviewCmd)
+
+	gracklePreviewCmd.PersistentFlags().StringVarP(&gracklePreviewCmdCfg.apiKeyId, "api-key-id", "", "", "API key ID (key_alfa_* or key_bravo_*)")
+	gracklePreviewCmd.PersistentFlags().StringVarP(&gracklePreviewCmdCfg.apiSecretKey, "api-secret-key", "", "", "API secret key")
+
+	gracklePreviewCmd.PersistentFlags().StringVarP(&gracklePreviewCmdCfg.endpoint, "endpoint", "", "", "Grackle API address")
+	err := gracklePreviewCmd.MarkPersistentFlagRequired("endpoint")
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 func getGracklePreviewClient() grackle_preview.GrackleApi {
-	return grackle_preview.NewGrackleGrpcClient(rootCmdCfg.endpoint, getSigner())
+	return grackle_preview.NewGrackleGrpcClient(gracklePreviewCmdCfg.endpoint, getSigner(gracklePreviewCmdCfg.apiKeyId, gracklePreviewCmdCfg.apiSecretKey))
 }
