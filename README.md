@@ -6,7 +6,11 @@
 `evrblk` is an official all-in-one CLI tool for all Everblack services. It can be used for:
 
 * calling API methods on all Everblack services:
-  * [Grackle](https://github.com/evrblk/grackle) 
+  * [Grackle](https://github.com/evrblk/grackle)
+  * Moab
+  * Bison
+  * IAM
+  * MyAccount
 * working with API keys (Alfa, Bravo)
 
 ## Installation
