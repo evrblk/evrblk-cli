@@ -16,13 +16,13 @@
 ## Installation
 
 ```shell
-go install github.com/evrblk/evrblk-cli/cmd/evrblk
+$ go install github.com/evrblk/evrblk-cli/cmd/evrblk
 ```
 
 ## Calling API methods
 
 ```shell
-evrblk <SERVICE> <METHOD> --endpoint=<ENDPOINT>
+$ evrblk <SERVICE> <METHOD> --endpoint=<ENDPOINT>
 ```
 
 * `SERVICE` is a versioned name of a service, i.e. `grackle-preview`
@@ -33,10 +33,10 @@ evrblk <SERVICE> <METHOD> --endpoint=<ENDPOINT>
 
 ```shell
 # use echo
-echo '{"namespace_name": "my_namespace"}' | evrblk grackle-preview list-semaphores --endpoint=localhost:8000
+$ echo '{"namespace_name": "my_namespace"}' | evrblk grackle-preview list-semaphores --endpoint=localhost:8000
 
 # or use files
-cat acquire_lock_request.json | evrblk grackle-preview acquire-lock --endpoint=localhost:8000
+$ cat acquire_lock_request.json | evrblk grackle-preview acquire-lock --endpoint=localhost:8000
 ```
 
 By default `evrblk` runs in unauthenticated mode. To use authentication add API keys via env variables:
