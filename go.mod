@@ -3,7 +3,7 @@ module github.com/evrblk/evrblk-cli
 go 1.25.1
 
 require (
-	github.com/evrblk/evrblk-go v0.0.0-20251023232203-f2abd3f691c7
+	github.com/evrblk/evrblk-go v0.0.0-20251023233135-0790a1a0de0c
 	github.com/spf13/cobra v1.10.1
 	google.golang.org/protobuf v1.36.10
 )
