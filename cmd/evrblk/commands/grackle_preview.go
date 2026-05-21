@@ -341,6 +341,24 @@ var addJobsToWaitGroupPreviewCmd = &cobra.Command{
 	},
 }
 
+var waitForWaitGroupPreviewCmd = &cobra.Command{
+	Use:   "wait-for-wait-group",
+	Short: "WaitForWaitGroup",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.WaitForWaitGroupRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.WaitForWaitGroup(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
 var completeJobsFromWaitGroupPreviewCmd = &cobra.Command{
 	Use:   "complete-jobs-from-wait-group",
 	Short: "CompleteJobsFromWaitGroup",
@@ -469,6 +487,7 @@ func init() {
 	gracklePreviewCmd.AddCommand(getWaitGroupPreviewCmd)
 	gracklePreviewCmd.AddCommand(deleteWaitGroupPreviewCmd)
 	gracklePreviewCmd.AddCommand(addJobsToWaitGroupPreviewCmd)
+	gracklePreviewCmd.AddCommand(waitForWaitGroupPreviewCmd)
 	gracklePreviewCmd.AddCommand(completeJobsFromWaitGroupPreviewCmd)
 	gracklePreviewCmd.AddCommand(acquireLockPreviewCmd)
 	gracklePreviewCmd.AddCommand(releaseLockPreviewCmd)
