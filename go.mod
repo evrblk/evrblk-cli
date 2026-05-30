@@ -3,7 +3,7 @@ module github.com/evrblk/evrblk-cli
 go 1.26.0
 
 require (
-	github.com/evrblk/evrblk-go v0.0.0-20260521205608-37740ffedb97
+	github.com/evrblk/evrblk-go v0.0.0-20260529161512-a5e94a1108ac
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/viper v1.21.0
 	google.golang.org/protobuf v1.36.11
@@ -30,7 +30,7 @@ require (
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.yaml.in/yaml/v2 v2.4.3 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
-	golang.org/x/crypto v0.51.0 // indirect
+	golang.org/x/crypto v0.52.0 // indirect
 	golang.org/x/net v0.54.0 // indirect
 	golang.org/x/sys v0.45.0 // indirect
 	golang.org/x/text v0.37.0 // indirect

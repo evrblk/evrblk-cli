@@ -467,9 +467,389 @@ var listLocksPreviewCmd = &cobra.Command{
 	},
 }
 
+var listSemaphoreHoldersCmd = &cobra.Command{
+	Use:   "list-semaphore-holders",
+	Short: "ListSemaphoreHolders",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.ListSemaphoreHoldersRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.ListSemaphoreHolders(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var createSemaphoreLeaseCmd = &cobra.Command{
+	Use:   "create-semaphore-lease",
+	Short: "CreateSemaphoreLease",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.CreateSemaphoreLeaseRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.CreateSemaphoreLease(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var revokeSemaphoreLeaseCmd = &cobra.Command{
+	Use:   "revoke-semaphore-lease",
+	Short: "RevokeSemaphoreLease",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.RevokeSemaphoreLeaseRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.RevokeSemaphoreLease(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var refreshSemaphoreLeaseCmd = &cobra.Command{
+	Use:   "refresh-semaphore-lease",
+	Short: "RefreshSemaphoreLease",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.RefreshSemaphoreLeaseRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.RefreshSemaphoreLease(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var listSemaphoreLeasesCmd = &cobra.Command{
+	Use:   "list-semaphore-leases",
+	Short: "ListSemaphoreLeases",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.ListSemaphoreLeasesRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.ListSemaphoreLeases(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var getSemaphoreLeaseCmd = &cobra.Command{
+	Use:   "get-semaphore-lease",
+	Short: "GetSemaphoreLease",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.GetSemaphoreLeaseRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.GetSemaphoreLease(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var listWaitGroupJobsCmd = &cobra.Command{
+	Use:   "list-wait-group-jobs",
+	Short: "ListWaitGroupJobs",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.ListWaitGroupJobsRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.ListWaitGroupJobs(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var createLockLeaseCmd = &cobra.Command{
+	Use:   "create-lock-lease",
+	Short: "CreateLockLease",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.CreateLockLeaseRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.CreateLockLease(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var revokeLockLeaseCmd = &cobra.Command{
+	Use:   "revoke-lock-lease",
+	Short: "RevokeLockLease",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.RevokeLockLeaseRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.RevokeLockLease(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var refreshLockLeaseCmd = &cobra.Command{
+	Use:   "refresh-lock-lease",
+	Short: "RefreshLockLease",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.RefreshLockLeaseRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.RefreshLockLease(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var listLockLeasesCmd = &cobra.Command{
+	Use:   "list-lock-leases",
+	Short: "ListLockLeases",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.ListLockLeasesRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.ListLockLeases(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var getLockLeaseCmd = &cobra.Command{
+	Use:   "get-lock-lease",
+	Short: "GetLockLease",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.GetLockLeaseRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.GetLockLease(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var createBarrierCmd = &cobra.Command{
+	Use:   "create-barrier",
+	Short: "CreateBarrier",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.CreateBarrierRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.CreateBarrier(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var listBarriersCmd = &cobra.Command{
+	Use:   "list-barriers",
+	Short: "ListBarriers",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.ListBarriersRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.ListBarriers(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var getBarrierCmd = &cobra.Command{
+	Use:   "get-barrier",
+	Short: "GetBarrier",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.GetBarrierRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.GetBarrier(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var deleteBarrierCmd = &cobra.Command{
+	Use:   "delete-barrier",
+	Short: "DeleteBarrier",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.DeleteBarrierRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.DeleteBarrier(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var updateBarrierCmd = &cobra.Command{
+	Use:   "update-barrier",
+	Short: "UpdateBarrier",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.UpdateBarrierRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.UpdateBarrier(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var arriveAtBarrierCmd = &cobra.Command{
+	Use:   "arrive-at-barrier",
+	Short: "ArriveAtBarrier",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.ArriveAtBarrierRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.ArriveAtBarrier(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var waitAtBarrierCmd = &cobra.Command{
+	Use:   "wait-at-barrier",
+	Short: "WaitAtBarrier",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.WaitAtBarrierRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.WaitAtBarrier(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
+var listBarrierParticipantsCmd = &cobra.Command{
+	Use:   "list-barrier-participants",
+	Short: "ListBarrierParticipants",
+	Run: func(cmd *cobra.Command, args []string) {
+		req := &grackle_preview.ListBarrierParticipantsRequest{}
+		readRequest(req)
+
+		client := getGracklePreviewClient()
+
+		resp, err := client.ListBarrierParticipants(context.Background(), req)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		printResponse(resp)
+	},
+}
+
 func init() {
 	rootCmd.AddCommand(gracklePreviewCmd)
 
+	gracklePreviewCmd.AddCommand(listSemaphoreHoldersCmd)
+	gracklePreviewCmd.AddCommand(createSemaphoreLeaseCmd)
+	gracklePreviewCmd.AddCommand(revokeSemaphoreLeaseCmd)
+	gracklePreviewCmd.AddCommand(refreshSemaphoreLeaseCmd)
+	gracklePreviewCmd.AddCommand(listSemaphoreLeasesCmd)
+	gracklePreviewCmd.AddCommand(getSemaphoreLeaseCmd)
+	gracklePreviewCmd.AddCommand(listWaitGroupJobsCmd)
+	gracklePreviewCmd.AddCommand(createLockLeaseCmd)
+	gracklePreviewCmd.AddCommand(revokeLockLeaseCmd)
+	gracklePreviewCmd.AddCommand(refreshLockLeaseCmd)
+	gracklePreviewCmd.AddCommand(listLockLeasesCmd)
+	gracklePreviewCmd.AddCommand(getLockLeaseCmd)
+	gracklePreviewCmd.AddCommand(createBarrierCmd)
+	gracklePreviewCmd.AddCommand(listBarriersCmd)
+	gracklePreviewCmd.AddCommand(getBarrierCmd)
+	gracklePreviewCmd.AddCommand(deleteBarrierCmd)
+	gracklePreviewCmd.AddCommand(updateBarrierCmd)
+	gracklePreviewCmd.AddCommand(arriveAtBarrierCmd)
+	gracklePreviewCmd.AddCommand(waitAtBarrierCmd)
+	gracklePreviewCmd.AddCommand(listBarrierParticipantsCmd)
 	gracklePreviewCmd.AddCommand(createNamespacePreviewCmd)
 	gracklePreviewCmd.AddCommand(listNamespacesPreviewCmd)
 	gracklePreviewCmd.AddCommand(getNamespacePreviewCmd)
