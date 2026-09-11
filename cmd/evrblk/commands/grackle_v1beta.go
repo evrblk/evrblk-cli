@@ -35,7 +35,7 @@ var grackleV1betaCmd = &cobra.Command{
 	},
 }
 
-var createNamespaceV1betaCmd = &cobra.Command{
+var createNamespaceGrackleV1betaCmd = &cobra.Command{
 	Use:   "create-namespace",
 	Short: "CreateNamespace",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -53,7 +53,7 @@ var createNamespaceV1betaCmd = &cobra.Command{
 	},
 }
 
-var listNamespacesV1betaCmd = &cobra.Command{
+var listNamespacesGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-namespaces",
 	Short: "ListNamespaces",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -71,7 +71,7 @@ var listNamespacesV1betaCmd = &cobra.Command{
 	},
 }
 
-var getNamespaceV1betaCmd = &cobra.Command{
+var getNamespaceGrackleV1betaCmd = &cobra.Command{
 	Use:   "get-namespace",
 	Short: "GetNamespace",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -89,7 +89,7 @@ var getNamespaceV1betaCmd = &cobra.Command{
 	},
 }
 
-var deleteNamespaceV1betaCmd = &cobra.Command{
+var deleteNamespaceGrackleV1betaCmd = &cobra.Command{
 	Use:   "delete-namespace",
 	Short: "DeleteNamespace",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -107,7 +107,7 @@ var deleteNamespaceV1betaCmd = &cobra.Command{
 	},
 }
 
-var updateNamespaceV1betaCmd = &cobra.Command{
+var updateNamespaceGrackleV1betaCmd = &cobra.Command{
 	Use:   "update-namespace",
 	Short: "UpdateNamespace",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -125,7 +125,7 @@ var updateNamespaceV1betaCmd = &cobra.Command{
 	},
 }
 
-var createSemaphoreV1betaCmd = &cobra.Command{
+var createSemaphoreGrackleV1betaCmd = &cobra.Command{
 	Use:   "create-semaphore",
 	Short: "CreateSemaphore",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -143,7 +143,7 @@ var createSemaphoreV1betaCmd = &cobra.Command{
 	},
 }
 
-var listSemaphoresV1betaCmd = &cobra.Command{
+var listSemaphoresGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-semaphores",
 	Short: "ListSemaphores",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -161,7 +161,7 @@ var listSemaphoresV1betaCmd = &cobra.Command{
 	},
 }
 
-var getSemaphoreV1betaCmd = &cobra.Command{
+var getSemaphoreGrackleV1betaCmd = &cobra.Command{
 	Use:   "get-semaphore",
 	Short: "GetSemaphore",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -179,7 +179,7 @@ var getSemaphoreV1betaCmd = &cobra.Command{
 	},
 }
 
-var acquireSemaphoreV1betaCmd = &cobra.Command{
+var acquireSemaphoreGrackleV1betaCmd = &cobra.Command{
 	Use:   "acquire-semaphore",
 	Short: "AcquireSemaphore",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -197,7 +197,7 @@ var acquireSemaphoreV1betaCmd = &cobra.Command{
 	},
 }
 
-var releaseSemaphoreV1betaCmd = &cobra.Command{
+var releaseSemaphoreGrackleV1betaCmd = &cobra.Command{
 	Use:   "release-semaphore",
 	Short: "ReleaseSemaphore",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -215,7 +215,7 @@ var releaseSemaphoreV1betaCmd = &cobra.Command{
 	},
 }
 
-var updateSemaphoreV1betaCmd = &cobra.Command{
+var updateSemaphoreGrackleV1betaCmd = &cobra.Command{
 	Use:   "update-semaphore",
 	Short: "UpdateSemaphore",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -233,7 +233,7 @@ var updateSemaphoreV1betaCmd = &cobra.Command{
 	},
 }
 
-var deleteSemaphoreV1betaCmd = &cobra.Command{
+var deleteSemaphoreGrackleV1betaCmd = &cobra.Command{
 	Use:   "delete-semaphore",
 	Short: "DeleteSemaphore",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -251,7 +251,7 @@ var deleteSemaphoreV1betaCmd = &cobra.Command{
 	},
 }
 
-var createWaitGroupV1betaCmd = &cobra.Command{
+var createWaitGroupGrackleV1betaCmd = &cobra.Command{
 	Use:   "create-wait-group",
 	Short: "CreateWaitGroup",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -269,7 +269,7 @@ var createWaitGroupV1betaCmd = &cobra.Command{
 	},
 }
 
-var listWaitGroupsV1betaCmd = &cobra.Command{
+var listWaitGroupsGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-wait-groups",
 	Short: "ListWaitGroups",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -287,7 +287,7 @@ var listWaitGroupsV1betaCmd = &cobra.Command{
 	},
 }
 
-var getWaitGroupV1betaCmd = &cobra.Command{
+var getWaitGroupGrackleV1betaCmd = &cobra.Command{
 	Use:   "get-wait-group",
 	Short: "GetWaitGroup",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -305,7 +305,7 @@ var getWaitGroupV1betaCmd = &cobra.Command{
 	},
 }
 
-var deleteWaitGroupV1betaCmd = &cobra.Command{
+var deleteWaitGroupGrackleV1betaCmd = &cobra.Command{
 	Use:   "delete-wait-group",
 	Short: "DeleteWaitGroup",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -323,7 +323,7 @@ var deleteWaitGroupV1betaCmd = &cobra.Command{
 	},
 }
 
-var updateWaitGroupV1betaCmd = &cobra.Command{
+var updateWaitGroupGrackleV1betaCmd = &cobra.Command{
 	Use:   "update-wait-group",
 	Short: "UpdateWaitGroup",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -341,7 +341,7 @@ var updateWaitGroupV1betaCmd = &cobra.Command{
 	},
 }
 
-var waitForWaitGroupV1betaCmd = &cobra.Command{
+var waitForWaitGroupGrackleV1betaCmd = &cobra.Command{
 	Use:   "wait-for-wait-group",
 	Short: "WaitForWaitGroup",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -359,7 +359,7 @@ var waitForWaitGroupV1betaCmd = &cobra.Command{
 	},
 }
 
-var completeJobsFromWaitGroupV1betaCmd = &cobra.Command{
+var completeJobsFromWaitGroupGrackleV1betaCmd = &cobra.Command{
 	Use:   "complete-jobs-from-wait-group",
 	Short: "CompleteJobsFromWaitGroup",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -377,7 +377,7 @@ var completeJobsFromWaitGroupV1betaCmd = &cobra.Command{
 	},
 }
 
-var acquireLockV1betaCmd = &cobra.Command{
+var acquireLockGrackleV1betaCmd = &cobra.Command{
 	Use:   "acquire-lock",
 	Short: "AcquireLock",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -395,7 +395,7 @@ var acquireLockV1betaCmd = &cobra.Command{
 	},
 }
 
-var releaseLockV1betaCmd = &cobra.Command{
+var releaseLockGrackleV1betaCmd = &cobra.Command{
 	Use:   "release-lock",
 	Short: "ReleaseLock",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -413,7 +413,7 @@ var releaseLockV1betaCmd = &cobra.Command{
 	},
 }
 
-var getLockV1betaCmd = &cobra.Command{
+var getLockGrackleV1betaCmd = &cobra.Command{
 	Use:   "get-lock",
 	Short: "GetLock",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -431,7 +431,7 @@ var getLockV1betaCmd = &cobra.Command{
 	},
 }
 
-var deleteLockV1betaCmd = &cobra.Command{
+var deleteLockGrackleV1betaCmd = &cobra.Command{
 	Use:   "delete-lock",
 	Short: "DeleteLock",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -449,7 +449,7 @@ var deleteLockV1betaCmd = &cobra.Command{
 	},
 }
 
-var listLocksV1betaCmd = &cobra.Command{
+var listLocksGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-locks",
 	Short: "ListLocks",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -467,7 +467,7 @@ var listLocksV1betaCmd = &cobra.Command{
 	},
 }
 
-var listSemaphoreHoldersCmd = &cobra.Command{
+var listSemaphoreHoldersGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-semaphore-holders",
 	Short: "ListSemaphoreHolders",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -485,7 +485,7 @@ var listSemaphoreHoldersCmd = &cobra.Command{
 	},
 }
 
-var createSemaphoreLeaseCmd = &cobra.Command{
+var createSemaphoreLeaseGrackleV1betaCmd = &cobra.Command{
 	Use:   "create-semaphore-lease",
 	Short: "CreateSemaphoreLease",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -503,7 +503,7 @@ var createSemaphoreLeaseCmd = &cobra.Command{
 	},
 }
 
-var revokeSemaphoreLeaseCmd = &cobra.Command{
+var revokeSemaphoreLeaseGrackleV1betaCmd = &cobra.Command{
 	Use:   "revoke-semaphore-lease",
 	Short: "RevokeSemaphoreLease",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -521,7 +521,7 @@ var revokeSemaphoreLeaseCmd = &cobra.Command{
 	},
 }
 
-var refreshSemaphoreLeaseCmd = &cobra.Command{
+var refreshSemaphoreLeaseGrackleV1betaCmd = &cobra.Command{
 	Use:   "refresh-semaphore-lease",
 	Short: "RefreshSemaphoreLease",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -539,7 +539,7 @@ var refreshSemaphoreLeaseCmd = &cobra.Command{
 	},
 }
 
-var listSemaphoreLeasesCmd = &cobra.Command{
+var listSemaphoreLeasesGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-semaphore-leases",
 	Short: "ListSemaphoreLeases",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -557,7 +557,7 @@ var listSemaphoreLeasesCmd = &cobra.Command{
 	},
 }
 
-var getSemaphoreLeaseCmd = &cobra.Command{
+var getSemaphoreLeaseGrackleV1betaCmd = &cobra.Command{
 	Use:   "get-semaphore-lease",
 	Short: "GetSemaphoreLease",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -575,7 +575,7 @@ var getSemaphoreLeaseCmd = &cobra.Command{
 	},
 }
 
-var listWaitGroupCompletedJobsCmd = &cobra.Command{
+var listWaitGroupCompletedJobsGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-wait-group-completed-jobs",
 	Short: "ListWaitGroupCompletedJobs",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -593,7 +593,7 @@ var listWaitGroupCompletedJobsCmd = &cobra.Command{
 	},
 }
 
-var createLockLeaseCmd = &cobra.Command{
+var createLockLeaseGrackleV1betaCmd = &cobra.Command{
 	Use:   "create-lock-lease",
 	Short: "CreateLockLease",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -611,7 +611,7 @@ var createLockLeaseCmd = &cobra.Command{
 	},
 }
 
-var revokeLockLeaseCmd = &cobra.Command{
+var revokeLockLeaseGrackleV1betaCmd = &cobra.Command{
 	Use:   "revoke-lock-lease",
 	Short: "RevokeLockLease",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -629,7 +629,7 @@ var revokeLockLeaseCmd = &cobra.Command{
 	},
 }
 
-var refreshLockLeaseCmd = &cobra.Command{
+var refreshLockLeaseGrackleV1betaCmd = &cobra.Command{
 	Use:   "refresh-lock-lease",
 	Short: "RefreshLockLease",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -647,7 +647,7 @@ var refreshLockLeaseCmd = &cobra.Command{
 	},
 }
 
-var listLockLeasesCmd = &cobra.Command{
+var listLockLeasesGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-lock-leases",
 	Short: "ListLockLeases",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -665,7 +665,7 @@ var listLockLeasesCmd = &cobra.Command{
 	},
 }
 
-var getLockLeaseCmd = &cobra.Command{
+var getLockLeaseGrackleV1betaCmd = &cobra.Command{
 	Use:   "get-lock-lease",
 	Short: "GetLockLease",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -683,7 +683,7 @@ var getLockLeaseCmd = &cobra.Command{
 	},
 }
 
-var createBarrierCmd = &cobra.Command{
+var createBarrierGrackleV1betaCmd = &cobra.Command{
 	Use:   "create-barrier",
 	Short: "CreateBarrier",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -701,7 +701,7 @@ var createBarrierCmd = &cobra.Command{
 	},
 }
 
-var listBarriersCmd = &cobra.Command{
+var listBarriersGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-barriers",
 	Short: "ListBarriers",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -719,7 +719,7 @@ var listBarriersCmd = &cobra.Command{
 	},
 }
 
-var getBarrierCmd = &cobra.Command{
+var getBarrierGrackleV1betaCmd = &cobra.Command{
 	Use:   "get-barrier",
 	Short: "GetBarrier",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -737,7 +737,7 @@ var getBarrierCmd = &cobra.Command{
 	},
 }
 
-var deleteBarrierCmd = &cobra.Command{
+var deleteBarrierGrackleV1betaCmd = &cobra.Command{
 	Use:   "delete-barrier",
 	Short: "DeleteBarrier",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -755,7 +755,7 @@ var deleteBarrierCmd = &cobra.Command{
 	},
 }
 
-var updateBarrierCmd = &cobra.Command{
+var updateBarrierGrackleV1betaCmd = &cobra.Command{
 	Use:   "update-barrier",
 	Short: "UpdateBarrier",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -773,7 +773,7 @@ var updateBarrierCmd = &cobra.Command{
 	},
 }
 
-var arriveAtBarrierCmd = &cobra.Command{
+var arriveAtBarrierGrackleV1betaCmd = &cobra.Command{
 	Use:   "arrive-at-barrier",
 	Short: "ArriveAtBarrier",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -791,7 +791,7 @@ var arriveAtBarrierCmd = &cobra.Command{
 	},
 }
 
-var waitAtBarrierCmd = &cobra.Command{
+var waitAtBarrierGrackleV1betaCmd = &cobra.Command{
 	Use:   "wait-at-barrier",
 	Short: "WaitAtBarrier",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -809,7 +809,7 @@ var waitAtBarrierCmd = &cobra.Command{
 	},
 }
 
-var listBarrierParticipantsCmd = &cobra.Command{
+var listBarrierParticipantsGrackleV1betaCmd = &cobra.Command{
 	Use:   "list-barrier-participants",
 	Short: "ListBarrierParticipants",
 	Run: func(cmd *cobra.Command, args []string) {
@@ -830,50 +830,50 @@ var listBarrierParticipantsCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(grackleV1betaCmd)
 
-	grackleV1betaCmd.AddCommand(listSemaphoreHoldersCmd)
-	grackleV1betaCmd.AddCommand(createSemaphoreLeaseCmd)
-	grackleV1betaCmd.AddCommand(revokeSemaphoreLeaseCmd)
-	grackleV1betaCmd.AddCommand(refreshSemaphoreLeaseCmd)
-	grackleV1betaCmd.AddCommand(listSemaphoreLeasesCmd)
-	grackleV1betaCmd.AddCommand(getSemaphoreLeaseCmd)
-	grackleV1betaCmd.AddCommand(listWaitGroupCompletedJobsCmd)
-	grackleV1betaCmd.AddCommand(createLockLeaseCmd)
-	grackleV1betaCmd.AddCommand(revokeLockLeaseCmd)
-	grackleV1betaCmd.AddCommand(refreshLockLeaseCmd)
-	grackleV1betaCmd.AddCommand(listLockLeasesCmd)
-	grackleV1betaCmd.AddCommand(getLockLeaseCmd)
-	grackleV1betaCmd.AddCommand(createBarrierCmd)
-	grackleV1betaCmd.AddCommand(listBarriersCmd)
-	grackleV1betaCmd.AddCommand(getBarrierCmd)
-	grackleV1betaCmd.AddCommand(deleteBarrierCmd)
-	grackleV1betaCmd.AddCommand(updateBarrierCmd)
-	grackleV1betaCmd.AddCommand(arriveAtBarrierCmd)
-	grackleV1betaCmd.AddCommand(waitAtBarrierCmd)
-	grackleV1betaCmd.AddCommand(listBarrierParticipantsCmd)
-	grackleV1betaCmd.AddCommand(createNamespaceV1betaCmd)
-	grackleV1betaCmd.AddCommand(listNamespacesV1betaCmd)
-	grackleV1betaCmd.AddCommand(getNamespaceV1betaCmd)
-	grackleV1betaCmd.AddCommand(deleteNamespaceV1betaCmd)
-	grackleV1betaCmd.AddCommand(updateNamespaceV1betaCmd)
-	grackleV1betaCmd.AddCommand(createSemaphoreV1betaCmd)
-	grackleV1betaCmd.AddCommand(listSemaphoresV1betaCmd)
-	grackleV1betaCmd.AddCommand(getSemaphoreV1betaCmd)
-	grackleV1betaCmd.AddCommand(acquireSemaphoreV1betaCmd)
-	grackleV1betaCmd.AddCommand(releaseSemaphoreV1betaCmd)
-	grackleV1betaCmd.AddCommand(updateSemaphoreV1betaCmd)
-	grackleV1betaCmd.AddCommand(deleteSemaphoreV1betaCmd)
-	grackleV1betaCmd.AddCommand(createWaitGroupV1betaCmd)
-	grackleV1betaCmd.AddCommand(listWaitGroupsV1betaCmd)
-	grackleV1betaCmd.AddCommand(getWaitGroupV1betaCmd)
-	grackleV1betaCmd.AddCommand(deleteWaitGroupV1betaCmd)
-	grackleV1betaCmd.AddCommand(updateWaitGroupV1betaCmd)
-	grackleV1betaCmd.AddCommand(waitForWaitGroupV1betaCmd)
-	grackleV1betaCmd.AddCommand(completeJobsFromWaitGroupV1betaCmd)
-	grackleV1betaCmd.AddCommand(acquireLockV1betaCmd)
-	grackleV1betaCmd.AddCommand(releaseLockV1betaCmd)
-	grackleV1betaCmd.AddCommand(getLockV1betaCmd)
-	grackleV1betaCmd.AddCommand(deleteLockV1betaCmd)
-	grackleV1betaCmd.AddCommand(listLocksV1betaCmd)
+	grackleV1betaCmd.AddCommand(listSemaphoreHoldersGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(createSemaphoreLeaseGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(revokeSemaphoreLeaseGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(refreshSemaphoreLeaseGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listSemaphoreLeasesGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(getSemaphoreLeaseGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listWaitGroupCompletedJobsGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(createLockLeaseGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(revokeLockLeaseGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(refreshLockLeaseGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listLockLeasesGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(getLockLeaseGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(createBarrierGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listBarriersGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(getBarrierGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(deleteBarrierGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(updateBarrierGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(arriveAtBarrierGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(waitAtBarrierGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listBarrierParticipantsGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(createNamespaceGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listNamespacesGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(getNamespaceGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(deleteNamespaceGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(updateNamespaceGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(createSemaphoreGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listSemaphoresGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(getSemaphoreGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(acquireSemaphoreGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(releaseSemaphoreGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(updateSemaphoreGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(deleteSemaphoreGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(createWaitGroupGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listWaitGroupsGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(getWaitGroupGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(deleteWaitGroupGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(updateWaitGroupGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(waitForWaitGroupGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(completeJobsFromWaitGroupGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(acquireLockGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(releaseLockGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(getLockGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(deleteLockGrackleV1betaCmd)
+	grackleV1betaCmd.AddCommand(listLocksGrackleV1betaCmd)
 
 	grackleV1betaCmd.PersistentFlags().StringVarP(&grackleV1betaCmdCfg.apiKeyId, "api-key-id", "", "", "API key ID (key_alfa_* or key_bravo_*)")
 	grackleV1betaCmd.PersistentFlags().StringVarP(&grackleV1betaCmdCfg.apiSecretKey, "api-secret-key", "", "", "API secret key")
