@@ -886,5 +886,9 @@ func init() {
 }
 
 func getGrackleV1betaClient() grackle_v1beta.GrackleApi {
-	return grackle_v1beta.NewGrackleGrpcClient(grackleV1betaCmdCfg.endpoint, getSigner(grackleV1betaCmdCfg.apiKeyId, grackleV1betaCmdCfg.apiSecretKey))
+	client, err := grackle_v1beta.NewGrackleGrpcClient(grackleV1betaCmdCfg.endpoint, getSigner(grackleV1betaCmdCfg.apiKeyId, grackleV1betaCmdCfg.apiSecretKey))
+	if err != nil {
+		log.Fatal(err)
+	}
+	return client
 }

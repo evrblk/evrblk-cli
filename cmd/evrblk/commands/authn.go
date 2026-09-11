@@ -40,7 +40,10 @@ var generateBravoKeyCmd = &cobra.Command{
 	Use:   "generate-bravo-key",
 	Short: "Generate Bravo API Key",
 	Run: func(cmd *cobra.Command, args []string) {
-		secret := authn.GenerateBravoSecret()
+		secret, err := authn.GenerateBravoSecret()
+		if err != nil {
+			log.Fatal(err)
+		}
 
 		fmt.Printf("Bravo secret:\n\n")
 		fmt.Printf("%s\n\n", secret)
